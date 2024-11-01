@@ -3,11 +3,11 @@ import openai
 import os
 
 # Access environment variables directly
-NEXT_PUBLIC_CHATWORK_API_TOKEN = os.getenv('NEXT_PUBLIC_CHATWORK_API_TOKEN')
-NEXT_PUBLIC_OPENAI_API_KEY = os.getenv('NEXT_PUBLIC_OPENAI_API_KEY')
+NEXT_PUBLIC_CHATWORK_API_TOKEN = os.getenv('NEXT_PUBLIC_NEXT_PUBLIC_CHATWORK_API_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 CHATWORK_ROOM_ID = os.getenv('CHATWORK_ROOM_ID')
 
-# CHATWORK_API_TOKEN = "dsdsssdd"
+# NEXT_PUBLIC_CHATWORK_API_TOKEN = "dsdsssdd"
 # OPENAI_API_KEY = "dsdsssdd"
 # CHATWORK_ROOM_ID = "dsdsssdd"
 
@@ -15,7 +15,7 @@ openai.api_key = OPENAI_API_KEY
 
 def get_chatwork_messages():
     url = f'https://api.chatwork.com/v2/rooms/{CHATWORK_ROOM_ID}/messages'
-    headers = {'X-ChatWorkToken': CHATWORK_API_TOKEN}
+    headers = {'X-ChatWorkToken': NEXT_PUBLIC_CHATWORK_API_TOKEN}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         return response.json()
@@ -25,7 +25,7 @@ def get_chatwork_messages():
 
 def send_chatwork_message(text):
     url = f'https://api.chatwork.com/v2/rooms/{CHATWORK_ROOM_ID}/messages'
-    headers = {'X-ChatWorkToken': CHATWORK_API_TOKEN}
+    headers = {'X-ChatWorkToken': NEXT_PUBLIC_CHATWORK_API_TOKEN}
     payload = {'body': text}
     response = requests.post(url, headers=headers, data=payload)
     if response.status_code != 200:
