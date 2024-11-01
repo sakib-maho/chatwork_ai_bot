@@ -3,13 +3,13 @@ import openai
 import os
 
 # Access environment variables directly
-# CHATWORK_API_TOKEN = os.getenv('CHATWORK_API_TOKEN')
-# OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-# CHATWORK_ROOM_ID = os.getenv('CHATWORK_ROOM_ID')
+CHATWORK_API_TOKEN = os.getenv('CHATWORK_API_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+CHATWORK_ROOM_ID = os.getenv('CHATWORK_ROOM_ID')
 
-CHATWORK_API_TOKEN = "dsdsssdd"
-OPENAI_API_KEY = "dsdsssdd"
-CHATWORK_ROOM_ID = "dsdsssdd"
+# CHATWORK_API_TOKEN = "dsdsssdd"
+# OPENAI_API_KEY = "dsdsssdd"
+# CHATWORK_ROOM_ID = "dsdsssdd"
 
 openai.api_key = OPENAI_API_KEY
 
