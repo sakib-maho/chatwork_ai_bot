@@ -1,0 +1,1 @@
+"""Chatwork AI bot package."""
