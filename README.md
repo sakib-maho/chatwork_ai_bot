@@ -1,5 +1,12 @@
 # Chatwork AI Bot (Local-first Upgrade)
 
+<!-- BrandCloud:readme-standard -->
+[![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Showcase](https://img.shields.io/badge/Portfolio-Showcase-blue.svg)](#)
+
+_Part of the `sakib-maho` project showcase series with consistent documentation and quality standards._
+
 This repository now includes a safer local-first bot response layer that can be tested
 without external API credentials. The legacy API script is preserved in `legacy/`.
 
